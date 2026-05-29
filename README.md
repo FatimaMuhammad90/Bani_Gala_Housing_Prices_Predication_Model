@@ -145,11 +145,14 @@ House-Price-Prediction/
 - `pip` package manager
 - Jupyter Notebook environment (`pip install notebook`)
 
-### 1. Clone & Install
+### 1. Clone 
 ```bash
-git clone [https://github.com/yourusername/house-price-prediction.git](https://github.com/yourusername/house-price-prediction.git)
-cd house-price-prediction
-pip install -r requirements.txt
+git clone https://github.com/FatimaMuhammad90/house-price-prediction.git
 ```
+
+```bash
+cd house-price-prediction
+```
+
 
 # ⭐ Star this repository if you found it helpful!

@@ -7,20 +7,6 @@
 
 An end-to-end machine learning pipeline that predicts house prices in Islamabad's Bani Gala area. This project covers the entire data lifecycle: from **automated dynamic web scraping using Playwright**, to advanced feature engineering, and finally, robust predictive modeling.
 
-##  Table of Contents
-
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Project Structure](#project-structure)
-- [Dataset & Scraping Architecture](#dataset--scraping-architecture)
-- [Models Implemented](#models-implemented)
-- [Results & Evaluation](#results--evaluation)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Challenges & Solutions](#challenges--solutions)
-- [Future Improvements](#future-improvements)
-- [Author & Acknowledgments](#-author--acknowledgments)
-
 ---
 
 ##  Overview
@@ -68,7 +54,7 @@ House-Price-Prediction/
 └── Final_Report.pdf                       # Comprehensive academic report
 ```
 
-## 📊 Dataset & Scraping Architecture
+## Dataset & Scraping Architecture
 
 ### The Playwright Advantage
 > Standard scraping libraries like BeautifulSoup cannot execute JavaScript, making them ineffective against modern, dynamic platforms like Zameen.com. **Playwright** spins up headless Chromium instances, waits for network payloads to fully resolve, interacts smoothly with pagination buttons, and cleanly extracts the DOM just as a human browser would.
@@ -106,7 +92,7 @@ House-Price-Prediction/
 
 ---
 
-## 🤖 Models Implemented
+## Models Implemented
 
 1. **Linear Regression** - Served as the initial baseline performance benchmark.
 2. **Decision Tree** - Mapped non-linear data structures using hierarchical rules.
@@ -123,9 +109,9 @@ House-Price-Prediction/
 
 | Rank | Model | R² Score | MAE (PKR) | RMSE (PKR) |
 | :---: | :--- | :---: | :---: | :---: |
-| 🥇 | **Tuned CatBoost** | **0.7869** | 5,100,000 | 7,200,000 |
-| 🥈 | Random Forest | 0.7435 | 5,507,263 | 7,817,750 |
-| 🥉 | XGBoost | 0.6641 | 5,998,624 | 8,647,719 |
+| 1 | **Tuned CatBoost** | **0.7869** | 5,100,000 | 7,200,000 |
+| 2 | Random Forest | 0.7435 | 5,507,263 | 7,817,750 |
+| 3 | XGBoost | 0.6641 | 5,998,624 | 8,647,719 |
 | 4 | Decision Tree | 0.6384 | 5,970,833 | 8,972,121 |
 | 5 | Linear Regression | 0.4290 | 6,932,500 | 11,274,553 |
 | 6 | Gradient Boosting | 0.1482 | 9,120,000 | 13,771,069 |
@@ -152,7 +138,7 @@ House-Price-Prediction/
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 - Python 3.8 or higher

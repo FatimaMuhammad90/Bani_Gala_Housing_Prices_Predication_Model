@@ -150,9 +150,5 @@ House-Price-Prediction/
 git clone https://github.com/FatimaMuhammad90/Bani_Gala_Housing_Prices_Predication_Model.git
 ```
 
-```bash
-cd house-price-prediction
-```
-
 
 # ⭐ Star this repository if you found it helpful!

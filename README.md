@@ -66,6 +66,7 @@ House-Price-Prediction/
 ├── requirements.txt                       # Project dependencies
 ├── README.md                              # Documentation
 └── Final_Report.pdf                       # Comprehensive academic report
+```
 
 ## 📊 Dataset & Scraping Architecture
 
@@ -73,6 +74,7 @@ House-Price-Prediction/
 > Standard scraping libraries like BeautifulSoup cannot execute JavaScript, making them ineffective against modern, dynamic platforms like Zameen.com. **Playwright** spins up headless Chromium instances, waits for network payloads to fully resolve, interacts smoothly with pagination buttons, and cleanly extracts the DOM just as a human browser would.
 
 ### Data Overview
+
 - **Source:** Zameen.com (Focusing on Bani Gala, Islamabad)
 - **Volume:** 296 unique, verified property listings
 - **Features:** 10 base attributes + 16 engineered features
@@ -96,11 +98,11 @@ House-Price-Prediction/
 
 | Feature | Formula / Logical Implementation | Target Benefit |
 | :--- | :--- | :--- |
-| `total_rooms` | $\text{Beds} + \text{Baths}$ | Captures complete structural footprint |
-| `property_age` | $2026 - \text{Built Year}$ | Tracks structural depreciation over time |
-| `area_per_bedroom` | $\text{Area} / \text{Beds}$ | Identifies layout spaciousness vs layout density |
-| `luxury_score` | $(\text{Furnished} \times 2) + (\text{Servant} \times 2) + (\text{Parking} \times 1)$ | Aggregates high-value premium amenities |
-| `is_new` | $\text{Built Year} \ge 2020$ | Categorizes modern build classifications |
+| `total_rooms` | `Beds + Baths` | Captures complete structural footprint |
+| `property_age` | `2026 - Built Year` | Tracks structural depreciation over time |
+| `area_per_bedroom` | `Area / Beds` | Identifies layout spaciousness vs layout density |
+| `luxury_score` | `(Furnished × 2) + (Servant × 2) + (Parking × 1)` | Aggregates high-value premium amenities |
+| `is_new` | `Built Year ≥ 2020` | Categorizes modern build classifications |
 
 ---
 
@@ -143,14 +145,14 @@ House-Price-Prediction/
 | **Conservative Optimization Tuning** | **0.7869** (+4.27%) |
 
 **Final Hyperparameter Configuration:**
-* `iterations` = 150
-* `learning_rate` = 0.05
-* `depth` = 6
-* `l2_leaf_reg` = 5
+- `iterations` = 150
+- `learning_rate` = 0.05
+- `depth` = 6
+- `l2_leaf_reg` = 5
 
 ---
 
-## Installation
+## 🚀 Installation
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -162,16 +164,6 @@ House-Price-Prediction/
 git clone [https://github.com/yourusername/house-price-prediction.git](https://github.com/yourusername/house-price-prediction.git)
 cd house-price-prediction
 pip install -r requirements.txt
-
-
-## 🛠️ Future Improvements
-Data Footprint Expansion: Scale Playwright routines across surrounding sectors of Islamabad to hit 1,000+ source samples.
-
-Geospatial Proximity Modeling: Blend location coordinates with open mapping APIs to automatically grade local amenity access.
-
-Production Web Deployment: Move the core logic into an independent Streamlit front-end or FastAPI dashboard for real-world deployment.
-
-Ensemble Stack Pipelines: Implement model meta-stacking layers targeting an optimized R² target boundary above 0.82.
 
 
 # ⭐ Star this repository if you found it helpful!

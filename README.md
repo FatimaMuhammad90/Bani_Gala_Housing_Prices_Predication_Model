@@ -147,7 +147,7 @@ House-Price-Prediction/
 
 ### 1. Clone 
 ```bash
-git clone https://github.com/FatimaMuhammad90/house-price-prediction.git
+git clone https://github.com/FatimaMuhammad90/Bani_Gala_Housing_Prices_Predication_Model.git
 ```
 
 ```bash

@@ -164,6 +164,6 @@ House-Price-Prediction/
 git clone [https://github.com/yourusername/house-price-prediction.git](https://github.com/yourusername/house-price-prediction.git)
 cd house-price-prediction
 pip install -r requirements.txt
-
+```
 
 # ⭐ Star this repository if you found it helpful!
